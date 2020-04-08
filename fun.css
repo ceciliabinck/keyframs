@@ -1,0 +1,42 @@
+.box {
+    background-color: #000;
+    width: 150px;
+    height: 0;
+    margin: 25px;
+    animation-name: potato;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.bal {
+    background-color: #e48610;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    float: none;
+    animation-name: jump;
+    animation-duration: .5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes potato {
+ from {
+     height: 0;
+ } 
+ to {
+     height: 150px;
+ }
+}
+
+@keyframes jump {
+    from{
+        height: 0;
+    }
+    to {
+        height: 100px;
+    }
+}
